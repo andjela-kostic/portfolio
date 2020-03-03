@@ -1,0 +1,64 @@
+za restoran korisni web fontovi
+
+<i class="fa fa-cc-visa" aria-hidden="true"></i>
+VISA
+
+<i class="fa fa-paypal" aria-hidden="true"></i>
+PAYPAL
+
+<i class="fa fa-angle-up" aria-hidden="true"></i>
+STRELICA NA GORE
+
+<i class="fa fa-facebook" aria-hidden="true"></i>
+FACEBOOK
+
+<i class="fab fa-instagram"></i>
+
+INSTAGRAM
+
+<i class="fa fa-youtube-play" aria-hidden="true"></i>
+YOUTUBE
+
+<i class="fa fa-wifi" aria-hidden="true"></i>
+WIFI
+
+<i class="fa fa-wheelchair" aria-hidden="true"></i>
+INVALIDSKA KOLICA
+
+<i class="fa fa-star" aria-hidden="true"></i>
+ZVEZDICA
+
+<i class="fa fa-glass" aria-hidden="true"></i>
+VINSKA ČAŠA
+
+<i class="fa fa-beer" aria-hidden="true"></i>
+PIVO
+
+<i class="fa fa-car" aria-hidden="true"></i>
+KOLA PARKING
+
+<i class="fa fa-address-card" aria-hidden="true"></i>
+ADRESAR KONTAKT
+
+<i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+KALENDAR ZA REZERVACIJE
+
+<i class="fa fa-bars" aria-hidden="true"></i>
+NAVBAR ONAJ BURGER ZA TELEFON
+
+<i class="fa fa-music" aria-hidden="true"></i>
+MUZIKA
+
+<i class="fa fa-sitemap" aria-hidden="true"></i>
+SITEMAP
+
+<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+KOLICA KUPOVINA
+
+<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+PALAC GORE
+
+<i class="fa fa-user" aria-hidden="true"></i>
+KORISNIK (ZA INPUT FORME KORISNO)
+<i class="fas fa-map-marker-alt"></i>
+Navigacija
