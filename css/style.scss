@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'Oranienbaum', serif;
+    src: url('../Oranienbaum-Regular.ttf');
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Caladea', serif;
+}
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: rgb(230,230,230);
+    font-family: Fjalla One;
+}
+.container {
+    width: 80%;
+    margin: 0px auto;
+}
+.o{
+    text-align: center;
+    font-size: 3em;
+    padding: 50px;
+    color:rgb(250,160,90);
+    text-shadow:2px 2px #000;
+}
+#zaglavlje {
+    position:relative;
+    background:{
+        image:url('../img/learn.png');
+        repeat: no-repeat;
+        size:cover;}
+         min-height:40.6em;
+    nav{
+        background-color:rgb(1,14,23);
+        padding:20px;
+        position:fixed;
+        width:100%;
+        font-size:20px;
+        z-index: 1;
+    }
+    header{
+        position:absolute;   
+        left:30%;
+        top:20%;
+        padding:7em 3em;
+        border:3px solid #fff;
+        color:rgb(1,14,23);
+        background-color:grey;
+        opacity: 0.8;
+        h1{
+            font-size: 2em;
+            letter-spacing: 3px;
+            #hi{
+                font-size: 3em;
+                color:rgb(250,160,90);
+            }
+        }
+        h2{
+            margin-top: 1em;
+            color:rgb(60, 57, 244)
+        }
+    }
+}
+ul{
+    list-style-type: none;
+}
+ul, #skils, #about, #project .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color:rgb(250,160,90);
+}
+a:hover{
+    font-weight: bold;
+}
+#prvo, #drugo, #trece {
+    padding-bottom: 6.25em;
+}
+#prvo{
+    #about{
+         p{ 
+            font-size:30px;
+            width:35%;
+            
+            font-family: Caladea;
+        }
+        #ime{
+            color:rgb(240,110,175);
+        }
+        #skul{
+            color:rgb(60, 57, 244);
+        }
+        figure{
+            float: left;
+            border:2px solid #fff ;
+        }
+    }
+}
+
+#drugo{
+    background-color:lightgray;
+    .skup:hover .overlay{
+        opacity: 0.9;
+        border-radius: 20px 0px 20px 0px;
+        box-shadow: 2px 2px #000;
+    }
+    .skup{
+        width: 23%;
+        position:relative;
+        .blok {
+                min-height: 200px;           
+                text-align: center;
+                border: 1px solid;
+                border-radius: 20px 0px 20px 0px;
+                padding:10px;
+                background-color:rgb(255,168,237);
+                h3{
+                    margin:0.5vw;
+                    resize:0.3vw;
+                }
+        }
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            background-color:rgb(255,168,237);
+            opacity: 0;
+            transition: .5s ease;
+            .text {
+                position: absolute;
+                top: 55%;
+                left: 55%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+            
+                p{
+                    font: {
+                        size: 6vw;
+                        weight:bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.proj{
+    position:relative;
+    
+    .opis{
+        position: absolute;
+        width:100%;
+        bottom:0;
+        background-color:rgb(55,200,240);
+        opacity:0;
+        p{
+            padding: 0.4em;
+        }
+        .stil{
+            font:{
+                size: 1em;
+                weight:bold;
+            }
+        }
+    }
+    
+}
+.proj:hover figure {
+    border: 1px solid;
+    opacity: 0.5;
+}
+.proj:hover .opis{
+    opacity: 1;
+}
+footer{
+
+    text-align:center;
+}
+table{
+    margin:0px auto;
+    td,input{
+        width:400px;
+        padding:5px;
+        margin:10px;
+    }
+}
+
+@import "responsive";
+
+
