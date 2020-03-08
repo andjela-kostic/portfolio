@@ -1,91 +1,130 @@
 @font-face {
     font-family: 'Oranienbaum', serif;
     src: url('../Oranienbaum-Regular.ttf');
-    font-family: 'Fjalla One', sans-serif;
-    font-family: 'Caladea', serif;
 }
 *{
     margin:0px;
     padding:0px;
+    box-sizing:border-box;
 }
+
+$boja1:rgb(55,204,244);
+$boja2:rgb(62, 72, 65);
+$boja3:rgb(253, 160, 88);
+$boja4:rgb(60, 57, 244);
+$boja5:rgb(248, 248, 248);
+$boja6:rgb(190, 204, 196);
+
 body{
-    background-color: rgb(230,230,230);
-    font-family: Fjalla One;
+    background-color: $boja5;
+    animation: mymoves 10s infinite;
+    font-family: Oranienbaum;
 }
-.container {
-    width: 80%;
-    margin: 0px auto;
+@keyframes mymoves {
+    to {background-color:$boja5;}
+    from {background-color: $boja6;}
 }
-.o{
+.o{ 
     text-align: center;
-    font-size: 3em;
-    padding: 50px;
-    color:rgb(250,160,90);
-    text-shadow:2px 2px #000;
+    font-size: 3vw;
+    padding-top:1vw ;
+    padding-bottom:2vw;
+    text-shadow:0.2vw 0.1vw $boja1;
+    color:#000;
+    letter-spacing:0.7vw;
+    position: relative;
+    animation: mymove 2s;
+    animation-iteration-count: infinite;
 }
-#zaglavlje {
-    position:relative;
-    background:{
-        image:url('../img/learn.png');
-        repeat: no-repeat;
-        size:cover;}
-         min-height:40.6em;
-    nav{
-        background-color:rgb(1,14,23);
-        padding:20px;
-        position:fixed;
-        width:100%;
-        font-size:20px;
-        z-index: 1;
-    }
-    header{
-        position:absolute;   
-        left:30%;
-        top:20%;
-        padding:7em 3em;
-        border:3px solid #fff;
-        color:rgb(1,14,23);
-        background-color:grey;
-        opacity: 0.8;
-        h1{
-            font-size: 2em;
-            letter-spacing: 3px;
-            #hi{
-                font-size: 3em;
-                color:rgb(250,160,90);
-            }
-        }
-        h2{
-            margin-top: 1em;
-            color:rgb(60, 57, 244)
-        }
-    }
+@keyframes mymove {
+    from {top: 0vw;}
+    to {top: 1.25vw;}
+}
+hr{
+    width: 10%;
+    margin:0px auto;
+    height: 0.3125em;
+    background-color:#000;
+    margin-bottom: 5vw;
 }
 ul{
     list-style-type: none;
 }
-ul, #skils, #about, #project .container{
+.list, #skils, #about, #project,#contact,footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 a{
     text-decoration: none;
-    color:rgb(250,160,90);
+    cursor: pointer;
 }
 a:hover{
     font-weight: bold;
 }
-#prvo, #drugo, #trece {
-    padding-bottom: 6.25em;
+#prvo, #drugo, #trece,#cetvrto {
+    padding-bottom: 5vw;
 }
+//*-----------ZAGLAVLJE------------
+#zaglavlje {
+    position:relative;
+    background:{
+        image:url('../img/learn.png');
+        attachment:fixed;
+        repeat: no-repeat;
+        size:cover;
+    }
+        min-height:40.6em;
+    nav{
+        background-color:$boja2;
+        padding:1.5vw;
+        position:fixed;
+        width:100%;
+        font-size:1.5vw;
+        z-index: 1;
+        a{
+            color:$boja1;
+        }
+    }
+    header{
+        position:absolute;   
+        left:30vw;
+        top:10vw;
+        padding:7em 3em;
+        border:3px solid #fff;
+        color:#000;
+        background-color:grey;
+        opacity: 0.8;
+        h1{
+            font-size: 2vw;
+            letter-spacing: 0.1em;
+            #hi{
+                text-shadow: 2px 2px #000;
+                font-size: 7vw;
+                color:$boja3;
+            }
+        }
+        h2{
+            margin-top: 1em;
+            color:$boja4;
+        }
+    }
+    #burger{
+        display:none;
+    }
+}
+
+//*----------O MENI------------
 #prvo{
     #about{
+        figure img{
+            width:35vw;
+        }
          p{ 
-            font-size:30px;
-            width:35%;
-            
+            font-size:2.1vw;
+            width:35%;           
             font-family: Caladea;
+            margin:7vw 0vw;
         }
         #ime{
             color:rgb(240,110,175);
@@ -93,106 +132,177 @@ a:hover{
         #skul{
             color:rgb(60, 57, 244);
         }
-        figure{
-            float: left;
-            border:2px solid #fff ;
-        }
     }
 }
-
+//*---------------VESTINE----------------
 #drugo{
-    background-color:lightgray;
-    .skup:hover .overlay{
-        opacity: 0.9;
-        border-radius: 20px 0px 20px 0px;
-        box-shadow: 2px 2px #000;
-    }
-    .skup{
-        width: 23%;
-        position:relative;
-        .blok {
-                min-height: 200px;           
-                text-align: center;
-                border: 1px solid;
-                border-radius: 20px 0px 20px 0px;
-                padding:10px;
-                background-color:rgb(255,168,237);
-                h3{
-                    margin:0.5vw;
-                    resize:0.3vw;
-                }
+    background-image:url('../img/bgg.jpg');
+    background-attachment: fixed;
+    
+    #skils{
+        display: flex;
+        flex-wrap: wrap;
+        .skup:hover .overlay{
+            opacity: 0.9;
+            color:rgb(62, 72, 65);
         }
-        
-        .overlay {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            background-color:rgb(255,168,237);
-            opacity: 0;
-            transition: .5s ease;
-            .text {
-                position: absolute;
-                top: 55%;
-                left: 55%;
-                transform: translate(-50%, -50%);
+        .skup{       
+            width: 23%;
+            position:relative;       
+            .blok {
+                min-height:18em;
+                font-size: 1.3vw;
                 text-align: center;
-            
-                p{
-                    font: {
-                        size: 6vw;
-                        weight:bold;
+                border: 3px solid $boja1;
+                padding:10px;
+                background-color:rgba(255, 255, 255, 0.445);
+                i{
+                    font-size: 2vw;
+                }
+                h3{
+                    letter-spacing:0.5vw;
+                    margin:1vw;
+                    resize:0.3vw;
+                    padding: 0.1em;
+                }
+            }       
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                background-color:$boja1;
+                opacity: 0;
+                transition: .5s ease;
+                .text {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;            
+                    p{
+                        font: {
+                            size: 6vw;
+                            weight:bold;
+                        }
                     }
                 }
             }
         }
     }
 }
-
-.proj{
-    position:relative;
-    
-    .opis{
-        position: absolute;
-        width:100%;
-        bottom:0;
-        background-color:rgb(55,200,240);
-        opacity:0;
-        p{
-            padding: 0.4em;
+//*------------PROJEKTI----------
+.proj {
+    border:2px solid $boja2;
+    figure{
+         img{
+            filter: grayscale(100%);         
+            transition: .3s ease-in-out;
+            }
         }
-        .stil{
-            font:{
-                size: 1em;
-                weight:bold;
+    figcaption{
+        background-color: $boja2;
+        padding: 0.5vw;
+        font-size:1.2vw;
+        font-weight: bold;
+        .stil{           
+            color:$boja3;
+            font-size: 1.5vw;
+        }
+    }
+}     
+.proj figure img:hover{
+    filter: grayscale(0%); 
+}
+//*----------CONTACT-----------
+#cetvrto{  
+    background-image:url('../img/bgg.jpg');
+    background-attachment: fixed;
+    #contact{
+        p{
+            color:$boja5;
+            font-size: 2vw;
+            margin-bottom:2vw;
+        }
+        #left{    
+            form{
+                table{
+                    width:90%;
+                    tbody{
+                        td{
+                            width: 100%;                           
+                            input{
+                                margin:5px 0px;
+                                padding:1vw;
+                                width:100%;
+                                border: 3px solid $boja1;
+                                caret-color: $boja1;
+                                font-size: 1.5vw;
+                            }                       
+                            #poruka {
+                                height: 15vw;
+                            }
+                            #dugme{
+                               float:right;
+                            }
+                            input[type=button]{
+                                width: 30%;
+                                background-color:rgb(55,200,240);
+                                text-align: center;
+                                border-radius: 0.5vw;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }  
+            }   
+        }
+        #right{    
+            ul{
+                padding:3.2vw 2vw;
+                i{
+                    color: $boja5;
+                    font-size:5vw;
+                }
+            } 
+            #fb :hover{
+                color:#3b5998;
+            }  
+            #ig :hover{
+                color:rgb(226, 45, 166);
+            }  
+            #vib :hover{
+                color:rgb(117, 23, 117);
+            }
+            #wa :hover{
+                color:rgb(27, 204, 36);
+            }
+            #git :hover{
+                color:#000;
             }
         }
     }
-    
 }
-.proj:hover figure {
-    border: 1px solid;
-    opacity: 0.5;
-}
-.proj:hover .opis{
-    opacity: 1;
-}
+//*--------------FUTER-----------
 footer{
-
-    text-align:center;
-}
-table{
-    margin:0px auto;
-    td,input{
-        width:400px;
-        padding:5px;
-        margin:10px;
+    background-color:rgb(62, 72, 65);
+    p{
+        font-size:2vw;
+        margin:3vw;
+        font-weight: bold;
+    }
+    ul{
+        font-size: 3vw;
+        li{
+            margin:2.5vw;
+            i{
+                color:$boja1;
+            }
+        }
     }
 }
-
 @import "responsive";
 
 

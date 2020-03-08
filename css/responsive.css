@@ -1,1 +1,287 @@
-/* No CSS *//*# sourceMappingURL=responsive.css.map */
+@media screen and (max-width: 60.62em) {
+  nav a {
+    font-size: 2vw;
+  }
+  #prvo #about p {
+    font-size: 2.2vw;
+  }
+  #drugo #skils .skup {
+    width: 40vw;
+    margin: 3vw 0vw;
+  }
+  #drugo #skils .skup .blok {
+    font-size: 2vw;
+  }
+  #drugo #skils .skup .blok i {
+    font-size: 4vw;
+  }
+  #trece #project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: center;
+            flex-direction: center;
+  }
+  #trece #project .proj {
+    margin: 3vw;
+  }
+  #trece #project .proj figcaption {
+    font-size: 1.7vw;
+  }
+}
+
+@media screen and (max-width: 50em) {
+  #zaglavlje nav a {
+    font-size: 3vw;
+    margin: 1vw;
+  }
+  #zaglavlje header {
+    left: 20vw;
+    top: 20vw;
+    padding: 5vw 2vw;
+  }
+  #zaglavlje header h1 {
+    font-size: 4vw;
+  }
+  #zaglavlje header h1 #hi {
+    font-size: 10vw;
+  }
+  .o {
+    font-size: 4vw;
+  }
+  #prvo #about p {
+    margin: 1vw 0vw;
+    font-size: 2.6vw;
+  }
+  #drugo #skils .skup .blok p {
+    font-size: 2.5vw;
+  }
+  .proj figcaption p {
+    font-size: 2vw;
+  }
+  .proj figcaption .stil {
+    font-size: 3vw;
+  }
+  #cetvrto td input::-webkit-input-placeholder, #cetvrto td textarea, #cetvrto td #poruka {
+    font-size: 2.5vw;
+  }
+  #cetvrto td input:-ms-input-placeholder, #cetvrto td textarea, #cetvrto td #poruka {
+    font-size: 2.5vw;
+  }
+  #cetvrto td input::-ms-input-placeholder, #cetvrto td textarea, #cetvrto td #poruka {
+    font-size: 2.5vw;
+  }
+  #cetvrto td input::placeholder, #cetvrto td textarea, #cetvrto td #poruka {
+    font-size: 2.5vw;
+  }
+  #cetvrto td #poruka {
+    height: 30%;
+  }
+  #cetvrto #contact p {
+    font-size: 2.7vw;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  #zaglavlje {
+    min-height: 30em;
+  }
+  #zaglavlje nav {
+    padding: 3vw 0vw;
+  }
+  #zaglavlje nav a {
+    font-size: 3.5vw;
+  }
+  #zaglavlje header {
+    left: 17vw;
+  }
+  #prvo #about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: center;
+            flex-direction: center;
+  }
+  #prvo #about figure img {
+    width: 60vw;
+  }
+  #prvo #about p {
+    width: 60vw;
+    font-size: 4vw;
+    margin-top: 7vw;
+  }
+  .proj figcaption p {
+    font-size: 2.8vw;
+  }
+  .proj figcaption .stil {
+    font-size: 4vw;
+  }
+  #cetvrto #contact #left #dugme {
+    width: 15vw;
+    font-size: 3vw;
+  }
+  #cetvrto #contact #right ul i {
+    font-size: 8vw;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: center;
+            flex-direction: center;
+  }
+  footer p {
+    width: 100%;
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 0vw;
+  }
+  footer ul li {
+    font-size: 4vw;
+  }
+}
+
+@media screen and (max-width: 32.5em) {
+  .o {
+    font-size: 7vw;
+    margin: 3vw 0vw;
+  }
+  #zaglavlje {
+    min-height: 100vw;
+  }
+  #zaglavlje nav {
+    display: none;
+  }
+  #zaglavlje #burger {
+    display: block;
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    z-index: 2;
+  }
+  #zaglavlje #burger #meni, #zaglavlje #burger #meni ul {
+    list-style: none;
+  }
+  #zaglavlje #burger #meni li {
+    float: right;
+    margin-right: 3px;
+    position: relative;
+    z-index: 1;
+  }
+  #zaglavlje #burger #meni li i {
+    font-size: 10vw;
+  }
+  #zaglavlje #burger #meni ul {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30vw;
+    display: none;
+  }
+  #zaglavlje #burger #meni ul li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    line-height: 15px;
+    background-color: #1a1a1c;
+    border: 1px solid #000;
+  }
+  #zaglavlje #burger #meni a:link, #zaglavlje #burger #meni a:visited {
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    color: #37ccf4;
+    padding: 5px;
+  }
+  #zaglavlje #burger #meni li:hover {
+    background-color: #3e4841;
+  }
+  #zaglavlje #burger #meni li:hover ul {
+    display: block;
+  }
+  #drugo #skils .skup {
+    width: 70vw;
+    margin: 3vw 0vw;
+  }
+  #drugo #skils .skup .blok p {
+    font-size: 3.5vw;
+  }
+  #drugo #skils .skup .blok i {
+    font-size: 5vw;
+  }
+  #drugo #skils .skup .blok h3 {
+    font-size: 4vw;
+  }
+  #trece #project .proj {
+    width: 80%;
+  }
+  #trece #project .proj figure img {
+    width: 100%;
+  }
+  #trece #project .proj figcaption p {
+    font-size: 4vw;
+  }
+  #cetvrto #contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: center;
+            flex-direction: center;
+  }
+  #cetvrto #contact #left, #cetvrto #contact #right {
+    width: 70%;
+    margin: 5vw 0vw;
+    text-align: center;
+  }
+  #cetvrto #contact #left p, #cetvrto #contact #right p {
+    font-size: 4vw;
+    padding: 3vw;
+  }
+  #cetvrto #contact #left input {
+    height: 10vw;
+    text-align: center;
+    margin-left: 5vw;
+  }
+  #cetvrto #contact #left input::-webkit-input-placeholder {
+    font-size: 4vw;
+  }
+  #cetvrto #contact #left input:-ms-input-placeholder {
+    font-size: 4vw;
+  }
+  #cetvrto #contact #left input::-ms-input-placeholder {
+    font-size: 4vw;
+  }
+  #cetvrto #contact #left input::placeholder {
+    font-size: 4vw;
+  }
+  footer ul li {
+    margin: 4vw 6vw;
+  }
+  footer ul li i {
+    font-size: 6vw;
+  }
+}
+
+@media screen and (max-width: 29em) {
+  #zaglavlje header {
+    left: 10vw;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

@@ -1,0 +1,323 @@
+@media screen and (max-width:60.62em){
+    nav{
+        a{
+            font-size: 2vw;
+        }
+    }
+    #prvo{
+        #about{
+            p{
+              font-size:2.2vw;
+            }
+        }
+    }
+    #drugo{
+        #skils{
+            .skup{
+                width:40vw;
+                margin:3vw 0vw;
+                .blok{
+                    font-size:2vw ;
+                    i{
+                        font-size: 4vw;
+                    }
+                }
+            }
+        }
+    }
+    #trece{
+        #project{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: center;
+            .proj{
+                margin:3vw;
+                figcaption{
+                    font-size: 1.7vw;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:50em){
+    #zaglavlje{
+        nav{
+            a{
+                font-size: 3vw;
+                margin: 1vw;
+            }
+        }
+        header{
+            left:20vw;
+            top:20vw;
+            padding:5vw 2vw;
+            h1{
+                font-size: 4vw;
+                #hi{
+                    font-size: 10vw;
+                }
+            }
+        }
+    }    
+    .o{
+        font-size: 4vw;
+    }
+    #prvo {
+        #about {
+            p{
+                margin:1vw 0vw;
+                font-size: 2.6vw;
+            }
+        }        
+    }
+    #drugo{
+        #skils{
+            .skup{
+                .blok{
+                    p{
+                        font-size: 2.5vw;
+                    }    
+                }
+            }
+        }
+    } 
+    .proj{
+        figcaption{ 
+            p{     
+            font-size: 2vw;    
+            }
+            .stil{
+                font-size:3vw;
+            }
+        }
+    }
+    #cetvrto{  
+        td{
+            input::placeholder,textarea,#poruka{
+                font-size:2.5vw;
+            }
+            #poruka{
+                height:30%;
+            }
+        }
+        #contact {
+            p{
+                font-size: 2.7vw;
+            }
+        }
+    }   
+}   
+
+@media screen and (max-width:37.5em){ 
+    #zaglavlje{
+        min-height: 30em;
+        nav{
+            padding: 3vw 0vw;
+            a{
+                font-size:3.5vw;
+            }
+        }
+        header{
+            left:17vw;
+        }
+    }
+    #prvo{
+        #about{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: center;
+            figure{
+                img{
+                 width:60vw;
+                } 
+            }
+            p{
+                width:60vw;
+                font-size: 4vw;
+                margin-top: 7vw;
+            }
+        }
+    }
+    .proj{
+        figcaption{ 
+            p{     
+            font-size: 2.8vw;    
+            }
+            .stil{
+                font-size:4vw;
+            }
+        }
+    }
+    #cetvrto{
+        #contact{
+            #left{
+                #dugme{
+                    width:15vw;
+                    font-size: 3vw;
+                }
+            }
+            #right{
+                ul{
+                    i{
+                        font-size: 8vw;
+                    }
+                }    
+            }
+        }
+    }
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: center;
+        p{
+            width: 100%;
+            font-size: 3vw;
+            text-align: center;
+            margin-top: 0vw;
+        }
+        ul{
+            li{
+                font-size: 4vw;
+            }
+        }
+    }
+}
+@media screen and (max-width:32.5em){
+    .o{
+        font-size: 7vw;
+        margin:3vw 0vw;
+    }
+    #zaglavlje{
+        min-height: 100vw;
+        nav{
+            display: none;
+        }
+        #burger{
+            display:block;
+            position:fixed;
+            right:5px;
+            top:5px;
+            z-index: 2;
+            #meni, #meni ul{
+                list-style: none;
+            }
+            #meni li{
+                float: right;
+                margin-right: 3px;
+                position: relative;
+                z-index: 1;
+                i{
+                    font-size: 10vw;
+                }
+            }
+            #meni ul{
+                position: absolute;
+                top:10px;
+                right:10px;
+                width: 30vw;
+                display: none;
+            }
+            #meni ul li{
+                float: none;
+                margin: 0;
+                padding: 0;
+                line-height: 15px;
+                background-color:#1a1a1c ;
+                border: 1px solid #000;
+            }
+            #meni a:link, #meni a:visited{
+                display: block;
+                font-weight: bold;
+                text-align: left;
+                text-decoration: none;
+                color: rgb(55,204,244);
+                padding: 5px;
+            }
+            #meni li:hover{
+                background-color:rgb(62, 72, 65) ;
+            }
+            #meni li:hover ul{
+                display: block;
+            }
+        }
+    }
+    #drugo{
+        #skils{
+            .skup{
+                width:70vw;
+                margin:3vw 0vw;
+                .blok{
+                    p{
+                    font-size:3.5vw ;
+                    }
+                    i{
+                        font-size: 5vw;
+                    }
+                    h3{
+                        font-size: 4vw;
+                    }
+                }
+            }
+        }
+    }
+    #trece{
+        #project{     
+            .proj {
+                width: 80%;   
+                figure img{
+                    width: 100%;              
+                }
+                figcaption{
+                  p{
+                      font-size: 4vw;
+                  }
+                }
+            }
+        }
+    }
+    #cetvrto{
+        #contact{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: center;
+            #left,#right{
+                width:70%;
+                margin:5vw 0vw;
+                text-align:center;
+                
+                p{
+                    font-size: 4vw;
+                    padding: 3vw;
+                }
+            }
+            #left{
+                input{
+                    height:10vw;
+                    text-align:center; 
+                    margin-left:5vw;
+                }
+                input::placeholder{
+                        font-size: 4vw;
+                }
+            }
+        }
+    }
+    footer{
+        ul{     
+            li{
+                margin:4vw 6vw;
+                i{
+                    font-size: 6vw;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:29em){
+    #zaglavlje{
+    header{
+        left:10vw;
+    }
+}
+}

@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <head>
-    <title>Portfolio</title>
+    <title>Anđela Kostić 51/19</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link href="images/ikonica.ico" rel="shortcut icon">
-    <link href="https://fonts.googleapis.com/css?family=Oranienbaum&display=swap" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Caladea&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="I'm Anđela Kostić and i'm a future web designer and programmer."/>
+    <meta name="keywords" content="Anđela,Kostić,Web,DEVELOPER,SKILLS,project,Contact,About me,Portfolio"/>
+    <link href="img/komp.jpg" rel="shortcut icon">
     <script src="https://kit.fontawesome.com/64136a29e4.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<!-- zaglavlje -->
     <section id="zaglavlje">
+        <article id="burger">
+            <ul id="meni">
+                <li><i class="fas fa-bars"></i>
+                    <ul>
+                        <li><a href="#prvo">ABOUT ME</a></li>
+                        <li><a href="#drugo" >MY SKILLS</a></li>
+                        <li><a href="#trece">MY PROJECTS</a></li>
+                        <li><a href="#cetvrto">CONTACT</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </article>
         <nav>
-            <ul>
-                <li><a href="#">ABOUT ME</a></li>
-                <li><a href="#">MY SKILLS</a></li>
-                <li><a href="#">MY PROJECT</a></li>
-                <li><a href="#">CONTACT</a></li>
+            <ul class="list">
+                <li><a href="#prvo">ABOUT ME</a></li>
+                <li><a href="#drugo">MY SKILLS</a></li>
+                <li><a href="#trece">MY PROJECTS</a></li>
+                <li><a href="#cetvrto">CONTACT</a></li>
             </ul>
         </nav>
         <header>
-            <h1><span id="hi">Hi,</span><br/>I'M ANGELA <br/>
+            <h1><span id="hi">Hi,</span><br/>I'M ANĐELA <br/>
               A FRONT-END WEB DEVELOPER</h1>
             <h2>WELCOME TO MY PORTFOLIO</h2>
         </header>
     </section>
+<!-- o meni -->
     <section id="prvo">
         <h1 class="o">ABOUT ME</h1>
-        <article class="container">
-            <section id="about">
-                <figure><img src="img/jasam.jpg" /></figure>
-                <p>I'm <span id="ime">Angela Kostic</span> and i'm a future web designer and programmer. I'm studying College for Internet and Communication Tehnologies-<span id="skul">ICT</span>, in Belgrade. Currently i'm a beginner. But also i learn and improving myself in this shchool. We have a lot of projects and that's why i hope that i will make a lot of progress.</p>
-            </section>
-        </article>
+        <hr/>      
+            <article id="about">
+                <figure>
+                    <img src="img/jasam.jpg" alt="autor" />
+                </figure>
+                <p>I'm <span id="ime">Anđela Kostić</span> and i'm a future web designer and programmer. I'm studying College for Internet and Communication Tehnologies-<span id="skul class="list"">ICT</span>, in Belgrade. Currently i'm a beginner. But also i learn and improving myself in this school. We have a lot of projects and that's why i hope that i will make a lot of progress.</p>
+            </article>        
     </section>
+<!-- vestine-->
     <section id="drugo">
         <h1 class="o">MY SKILLS</h1>
+        <hr/>
         <section id="skils">
             <div class="skup">
                 <article class="blok">
-                    <i class="fab fa-html5"></i></i></br>
+                    <i class="fab fa-html5"></i>
                     <h3>HTML</h3>
                     <p>Hypertext Markup Language is the standard markup language for creating web pages and web applications. With Cascading Style Sheets and JavaScript, it forms a triad of cornerstone technologies for the World Wide Web.</p>
                 </article>
                 <article class="overlay">
-                    <div class="text"><p>90%</p></div>
+                    <div class="text">
+                        <p>90%</p>
+                    </div>
                 </article>
             </div>
             <div class="skup">
@@ -54,72 +73,109 @@
                     <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language like HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
                 </article>
                 <article class="overlay">
-                    <div class="text"><p>75%</p></div>
+                    <div class="text">
+                        <p>75%</p>
+                    </div>
                 </article>
             </div>
             <div class="skup">
                 <article class="blok">
                     <i class="fab fa-adobe"></i>
                     <h3>Adobe Photoshop</h3>
-                    <p>Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. for Windows and macOS. It was originally created in 1988 by Thomas and John Knoll. Since then, this software has become the industry standard not only in raster graphics editing, but in digital art as a whole.</p>
+                    <p> Adobe Photoshop is a computer program for processing raster graphics. He is currently the market leader in professional programs in the field of digital photo processing and production.</p>
                 </article>
                 <article class="overlay">
-                    <div class="text"><p>60%</p></div>
+                    <div class="text">
+                        <p>60%</p>
+                    </div>
                 </article>
             </div>
             <div class="skup">
                 <article class="blok">
                     <i class="fas fa-chart-line"></i>
                     <h3>SEO</h3>
-                    <p>SEO(Search Engine Optimization) isn't just about building search engine-friendly websites. It's about making your site better for people too.</p>
+                    <p>SEO (Search Engine Optimization) isn't just about building search engine-friendly websites. It's about making your site better for people too.</p>
                 </article>
                 <article class="overlay">
-                   <div class="text"> <p>80%</p></div>
+                   <div class="text"> 
+                       <p>80%</p>
+                    </div>
                 </article>
             </div>
         </section>
     </section>
+<!-----Projekti-->
     <section id="trece">
-        <h1 class="o">MY PROJECT</h1>
+        <h1 class="o">MY PROJECTS</h1>
+        <hr/>
         <section id="project">
-            <article class="container">
-                <div class="proj">
-                    <figure>
-                        <img src="img/Screenshot_6.png" />
-                    </figure>
-                    <section class="opis">
-                        <p class="stil">Pizzeria Mama Mia</p>
-                        <p>Non-responsive static site done as a school project in HTML and CSS</p>
-                    </section>
-                </div>
-                <div class="proj">
-                    <figure><img src="img/Screenshot_1.png" /></figure>
-                    <section class="opis">
-                        <p class="stil">Portfolio</p>
-                        <p>Responsive static site done as a school project in HTML and CSS</p>
-                    </section>
-                </div>
-            </article>
+            <div class="proj">
+                <figure>
+                    <img src="img/Screenshot_6.png" alt="prvi projekat" />
+                </figure>
+                <figcaption> <p class="stil">Pizzeria Mama Mia</p></figcaption>
+                <figcaption> <p>Non-responsive static site done as a school project in HTML and CSS</p></figcaption> 
+            </div>
+            <div class="proj">
+                <figure><img src="img/Screenshot_1.png" alt="drugi projekat"/></figure>
+                <figcaption>  <p class="stil">Portfolio</p></figcaption> 
+                <figcaption> <p>Responsive static site done as a school project in HTML and CSS</p></figcaption> 
+            </div>           
         </section>
     </section>
-    <footer>
-        <p>Have a question or want to work together?</p>
-        <form>
-            <table>
-                <tbody>
-                    <tr><td><input type="text" placeholder="Name:" /></td></tr>
-                    <tr><td><input type="email" placeholder="Email:" /></td></tr>
-                    <tr><td><textarea placeholder="Message:"></textarea></td></tr>
-                    <tr><td><input type="button" value="SUBMIT" /></td></tr>
-                </tbody>
-            </table>
-        </form>
-        <nav>
-            <ul><li><a><i class="fab fa-instagram"></i></a></li></ul>
-            <ul><li><a><i class="fab fa-facebook"></i></a></li></ul>
-            <ul><li><a><i class="fab fa-viber"></i></a></li></ul>
-            <ul><li><a><i class="fab fa-whatsupp"></i></a></li></ul> 
-        </nav>
+<!---------KONTAKT------------>  
+    <section id="cetvrto">
+        <h1 class="o">CONTACT</h1>
+        <hr/>
+        <article id="contact">
+            <article id="left">
+                <p>Have a question or want to work together? <br/>Send me a mail.</p>
+                <form>
+                    <table>
+                        <tbody>
+                            <tr><td><input type="text" size="20" placeholder="Name:" required/></td></tr>
+                            <tr><td><input type="text" size="20" placeholder="Surname:" required /></td></tr>
+                            <tr><td><input type="email" size="30" placeholder="Email:" required/></td></tr>
+                            <tr><td><input type="tel" size="15" placeholder="Phone:" required/></td></tr>
+                            <tr><td><input type="text" placeholder="Message:" id="poruka" required/></td></tr>
+                            <tr><td><input type="button" id="dugme" value="SENT" onclick="alert('Successfully sent!')"/></td></tr>
+                        </tbody>
+                    </table>
+                </form>
+            </article>
+            <article id="right">
+                <p>Or find me on other social networks:</p>           
+                <ul class="list">
+                    <li><a href="https://www.facebook.com/21012001ak" id="fb" title="facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/aandjeeloo/?hl=sr" id="ig" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                <ul class="list">
+                    <li><a href="https://www.viber.com/" id="vib" title="viber"><i class="fab fa-viber"></i></a></li>                
+                    <li><a href="https://www.whatsapp.com/" id="wa" title="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+                <ul class="list">
+                    <li><a href="https://github.com/andjela-kostic" id="git" title="github"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </article>
+        </article>
+     </section>
+     <!-------FUTER---------->
+     <footer>
+        <ul class="list">
+            <li>
+                <a href=""  title="css"> <i class="fab fa-css3-alt" aria-hidden="true"></i></a>
+            </li>               
+            <li>
+                <a href="" title="sass"><i class="fab fa-sass" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="" title="sitemap"><i class="fas fa-sitemap" aria-hidden="true"></i></a>
+            </li>
+            <li>
+                <a href="" title="responsive"><i class="fas fa-window-restore" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+        <p>Anđela Kostić &copy;2020.</p>
     </footer>
 </body>
 </html>
