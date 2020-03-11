@@ -7,6 +7,7 @@
     <meta name="description" content="I'm Anđela Kostić and i'm a future web designer and programmer."/>
     <meta name="keywords" content="Anđela,Kostić,Web,DEVELOPER,SKILLS,project,Contact,About me,Portfolio"/>
     <link href="img/komp.jpg" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=Oranienbaum&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/64136a29e4.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -38,7 +39,7 @@
             <h2>WELCOME TO MY PORTFOLIO</h2>
         </header>
     </section>
-<!-- o meni -->
+<!------o meni -------->
     <section id="prvo">
         <h1 class="o">ABOUT ME</h1>
         <hr/>      
@@ -46,15 +47,15 @@
                 <figure>
                     <img src="img/jasam.jpg" alt="autor" />
                 </figure>
-                <p>I'm <span id="ime">Anđela Kostić</span> and i'm a future web designer and programmer. I'm studying College for Internet and Communication Tehnologies-<span id="skul class="list"">ICT</span>, in Belgrade. Currently i'm a beginner. But also i learn and improving myself in this school. We have a lot of projects and that's why i hope that i will make a lot of progress.</p>
+                <p>I'm <span id="ime">Anđela Kostić</span> and i'm a future web designer and programmer. I'm studying College for Internet and Communication Tehnologies-<span id="skul">ICT</span>, in Belgrade. Currently i'm a beginner. But also i learn and improving myself in this school. We have a lot of projects and that's why i hope that i will make a lot of progress.</p>
             </article>        
     </section>
-<!-- vestine-->
+<!------ vestine------->
     <section id="drugo">
         <h1 class="o">MY SKILLS</h1>
         <hr/>
-        <section id="skils">
-            <div class="skup">
+        <article id="skils">
+            <section class="skup">
                 <article class="blok">
                     <i class="fab fa-html5"></i>
                     <h3>HTML</h3>
@@ -65,8 +66,8 @@
                         <p>90%</p>
                     </div>
                 </article>
-            </div>
-            <div class="skup">
+            </section>
+            <section class="skup">
                 <article class="blok">
                     <i class="fab fa-css3-alt"></i>
                     <h3>CSS</h3>
@@ -74,11 +75,11 @@
                 </article>
                 <article class="overlay">
                     <div class="text">
-                        <p>75%</p>
+                        <p>80%</p>
                     </div>
                 </article>
-            </div>
-            <div class="skup">
+            </section>
+            <section class="skup">
                 <article class="blok">
                     <i class="fab fa-adobe"></i>
                     <h3>Adobe Photoshop</h3>
@@ -89,8 +90,8 @@
                         <p>60%</p>
                     </div>
                 </article>
-            </div>
-            <div class="skup">
+            </section>
+            <section class="skup">
                 <article class="blok">
                     <i class="fas fa-chart-line"></i>
                     <h3>SEO</h3>
@@ -98,39 +99,39 @@
                 </article>
                 <article class="overlay">
                    <div class="text"> 
-                       <p>80%</p>
+                       <p>75%</p>
                     </div>
                 </article>
-            </div>
-        </section>
+            </section>
+        </article>
     </section>
-<!-----Projekti-->
+<!-----projekti-->
     <section id="trece">
         <h1 class="o">MY PROJECTS</h1>
         <hr/>
-        <section id="project">
-            <div class="proj">
+        <article id="project">
+            <section class="proj">
                 <figure>
                     <img src="img/Screenshot_6.png" alt="prvi projekat" />
                 </figure>
                 <figcaption> <p class="stil">Pizzeria Mama Mia</p></figcaption>
                 <figcaption> <p>Non-responsive static site done as a school project in HTML and CSS</p></figcaption> 
-            </div>
-            <div class="proj">
+            </section>
+            <section class="proj">
                 <figure><img src="img/Screenshot_1.png" alt="drugi projekat"/></figure>
                 <figcaption>  <p class="stil">Portfolio</p></figcaption> 
                 <figcaption> <p>Responsive static site done as a school project in HTML and CSS</p></figcaption> 
-            </div>           
-        </section>
+            </section>           
+        </article>
     </section>
 <!---------KONTAKT------------>  
     <section id="cetvrto">
         <h1 class="o">CONTACT</h1>
         <hr/>
         <article id="contact">
-            <article id="left">
+            <section id="left">
                 <p>Have a question or want to work together? <br/>Send me a mail.</p>
-                <form>
+                <form action="#" method="get">
                     <table>
                         <tbody>
                             <tr><td><input type="text" size="20" placeholder="Name:" required/></td></tr>
@@ -138,12 +139,12 @@
                             <tr><td><input type="email" size="30" placeholder="Email:" required/></td></tr>
                             <tr><td><input type="tel" size="15" placeholder="Phone:" required/></td></tr>
                             <tr><td><input type="text" placeholder="Message:" id="poruka" required/></td></tr>
-                            <tr><td><input type="button" id="dugme" value="SENT" onclick="alert('Successfully sent!')"/></td></tr>
+                            <tr><td><button  onclick="alert('Successfully sent!')" id="dugme"><i class="fa fa-send-o"></i></button></td></tr>
                         </tbody>
                     </table>
                 </form>
-            </article>
-            <article id="right">
+            </section>
+            <section id="right">
                 <p>Or find me on other social networks:</p>           
                 <ul class="list">
                     <li><a href="https://www.facebook.com/21012001ak" id="fb" title="facebook"><i class="fab fa-facebook"></i></a></li>
@@ -156,10 +157,10 @@
                 <ul class="list">
                     <li><a href="https://github.com/andjela-kostic" id="git" title="github"><i class="fab fa-github"></i></a></li>
                 </ul>
-            </article>
+            </section>
         </article>
      </section>
-     <!-------FUTER---------->
+<!-------FUTER---------->
      <footer>
         <ul class="list">
             <li>

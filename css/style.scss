@@ -1,11 +1,11 @@
 @font-face {
-    font-family: 'Oranienbaum', serif;
-    src: url('../Oranienbaum-Regular.ttf');
+    font-family: 'Oranienbaum', serif;;
 }
 *{
     margin:0px;
     padding:0px;
     box-sizing:border-box;
+    scroll-behavior: smooth;
 }
 
 $boja1:rgb(55,204,244);
@@ -26,11 +26,10 @@ body{
 }
 .o{ 
     text-align: center;
-    font-size: 3vw;
-    padding-top:1vw ;
-    padding-bottom:2vw;
+    font-size: 3.5vw;
+    font-weight: bold;
+    padding:2vw 0vw;
     text-shadow:0.2vw 0.1vw $boja1;
-    color:#000;
     letter-spacing:0.7vw;
     position: relative;
     animation: mymove 2s;
@@ -121,10 +120,9 @@ a:hover{
             width:35vw;
         }
          p{ 
-            font-size:2.1vw;
-            width:35%;           
-            font-family: Caladea;
-            margin:7vw 0vw;
+            font-size:2.2vw;
+            width:35vw;           
+            margin:5vw 0vw;
         }
         #ime{
             color:rgb(240,110,175);
@@ -144,7 +142,7 @@ a:hover{
         flex-wrap: wrap;
         .skup:hover .overlay{
             opacity: 0.9;
-            color:rgb(62, 72, 65);
+            color:$boja2;
         }
         .skup{       
             width: 23%;
@@ -184,7 +182,7 @@ a:hover{
                     text-align: center;            
                     p{
                         font: {
-                            size: 6vw;
+                            size: 7vw;
                             weight:bold;
                         }
                     }
@@ -229,7 +227,7 @@ a:hover{
         #left{    
             form{
                 table{
-                    width:90%;
+                    width:100%;
                     tbody{
                         td{
                             width: 100%;                           
@@ -246,13 +244,17 @@ a:hover{
                             }
                             #dugme{
                                float:right;
+                               width: 30%;
+                               background-color:$boja1;
+                               color: $boja2;
+                               text-align: center;
+                               border-radius: 0.7vw;
+                               font-size:2vw;
+                               padding:1vw;
+
                             }
-                            input[type=button]{
-                                width: 30%;
-                                background-color:rgb(55,200,240);
-                                text-align: center;
-                                border-radius: 0.5vw;
-                                font-weight: bold;
+                            #dugme:hover{
+                                color:#000;
                             }
                         }
                     }

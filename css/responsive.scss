@@ -7,7 +7,8 @@
     #prvo{
         #about{
             p{
-              font-size:2.2vw;
+              font-size:2.5vw;
+              margin:2vw 0vw;
             }
         }
     }
@@ -17,10 +18,14 @@
                 width:40vw;
                 margin:3vw 0vw;
                 .blok{
-                    font-size:2vw ;
+                    font-size:2.2vw ;
+                    padding: 4vw 2vw;
                     i{
                         font-size: 4vw;
                     }
+                }
+                .overlay .text p{
+                    font-size: 12vw;
                 }
             }
         }
@@ -72,14 +77,8 @@
         }        
     }
     #drugo{
-        #skils{
-            .skup{
-                .blok{
-                    p{
-                        font-size: 2.5vw;
-                    }    
-                }
-            }
+        .blok p{
+            font-size: 2.5vw;
         }
     } 
     .proj{
@@ -208,13 +207,13 @@
                 position: relative;
                 z-index: 1;
                 i{
-                    font-size: 10vw;
+                    font-size: 9vw;
                 }
             }
             #meni ul{
                 position: absolute;
-                top:10px;
-                right:10px;
+                top:20px;
+                right:20px;
                 width: 30vw;
                 display: none;
             }
@@ -240,6 +239,11 @@
             #meni li:hover ul{
                 display: block;
             }
+        }
+    }
+    #prvo{
+        #about p{
+            font-size: 5vw;
         }
     }
     #drugo{
@@ -300,6 +304,12 @@
                 input::placeholder{
                         font-size: 4vw;
                 }
+                #dugme{
+                    height:10vw;
+                    i{
+                        font-size: 5vw;
+                    }
+                }
             }
         }
     }
@@ -316,8 +326,97 @@
 }
 @media screen and (max-width:29em){
     #zaglavlje{
-    header{
-        left:10vw;
+        header{
+            left:10vw;
+        }
     }
 }
+@media screen and (max-width:25em){
+    #zaglavlje{
+        header{
+            width:80vw;
+            left:5vw;
+            h1{
+                font-size: 8vw;
+                #hi{
+                    font-size: 10vw;
+                }
+            }
+            h2{
+                font-size: 5vw;
+            }
+        }
+    }
+    .o{
+        font-size: 10vw;
+    }
+    #prvo{
+        #about p{
+            font-size: 6vw;
+        }
+    }
+    #drugo{
+        #skils{
+            .skup{
+                .blok{
+                    p{
+                    font-size:5vw ;
+                    }
+                    i{
+                        font-size: 7vw;
+                    }
+                    h3{
+                        font-size: 6vw;
+                    }
+                }
+            }
+        }
+    }
+    #trece{
+        #project{     
+            .proj {              
+                figcaption{
+                  p{
+                      font-size: 5vw;
+                  }
+                }
+            }
+        }
+    }
+    #cetvrto{
+        #contact{
+            #left,#right{
+                p{
+                    font-size: 6vw;
+                }
+            }
+            #left{
+                input::placeholder{
+                    font-size: 5vw;
+                }
+            }
+            #right{
+                ul{
+                    i{
+                        font-size: 15vw;
+                        margin: 5vw;
+                    }
+                }    
+            }
+        }
+    }
+    footer{
+        p{
+            font-size:5vw;
+            margin:2vw;
+        }
+        ul{
+            li{
+                margin:5vw;
+                i{
+                    font-size: 8vw;
+                }
+            }
+        }
+    }
 }

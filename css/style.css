@@ -1,6 +1,5 @@
 @font-face {
   font-family: 'Oranienbaum', serif;
-  src: url("../Oranienbaum-Regular.ttf");
 }
 
 * {
@@ -8,6 +7,7 @@
   padding: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -37,11 +37,10 @@ body {
 
 .o {
   text-align: center;
-  font-size: 3vw;
-  padding-top: 1vw;
-  padding-bottom: 2vw;
+  font-size: 3.5vw;
+  font-weight: bold;
+  padding: 2vw 0vw;
   text-shadow: 0.2vw 0.1vw #37ccf4;
-  color: #000;
   letter-spacing: 0.7vw;
   position: relative;
   -webkit-animation: mymove 2s;
@@ -163,10 +162,9 @@ a:hover {
 }
 
 #prvo #about p {
-  font-size: 2.1vw;
-  width: 35%;
-  font-family: Caladea;
-  margin: 7vw 0vw;
+  font-size: 2.2vw;
+  width: 35vw;
+  margin: 5vw 0vw;
 }
 
 #prvo #about #ime {
@@ -243,7 +241,7 @@ a:hover {
 }
 
 #drugo #skils .skup .overlay .text p {
-  font-size: 6vw;
+  font-size: 7vw;
   font-weight: bold;
 }
 
@@ -287,7 +285,7 @@ a:hover {
 }
 
 #cetvrto #contact #left form table {
-  width: 90%;
+  width: 100%;
 }
 
 #cetvrto #contact #left form table tbody td {
@@ -309,14 +307,17 @@ a:hover {
 
 #cetvrto #contact #left form table tbody td #dugme {
   float: right;
+  width: 30%;
+  background-color: #37ccf4;
+  color: #3e4841;
+  text-align: center;
+  border-radius: 0.7vw;
+  font-size: 2vw;
+  padding: 1vw;
 }
 
-#cetvrto #contact #left form table tbody td input[type=button] {
-  width: 30%;
-  background-color: #37c8f0;
-  text-align: center;
-  border-radius: 0.5vw;
-  font-weight: bold;
+#cetvrto #contact #left form table tbody td #dugme:hover {
+  color: #000;
 }
 
 #cetvrto #contact #right ul {
@@ -375,17 +376,22 @@ footer ul li i {
     font-size: 2vw;
   }
   #prvo #about p {
-    font-size: 2.2vw;
+    font-size: 2.5vw;
+    margin: 2vw 0vw;
   }
   #drugo #skils .skup {
     width: 40vw;
     margin: 3vw 0vw;
   }
   #drugo #skils .skup .blok {
-    font-size: 2vw;
+    font-size: 2.2vw;
+    padding: 4vw 2vw;
   }
   #drugo #skils .skup .blok i {
     font-size: 4vw;
+  }
+  #drugo #skils .skup .overlay .text p {
+    font-size: 12vw;
   }
   #trece #project {
     display: -webkit-box;
@@ -429,7 +435,7 @@ footer ul li i {
     margin: 1vw 0vw;
     font-size: 2.6vw;
   }
-  #drugo #skils .skup .blok p {
+  #drugo .blok p {
     font-size: 2.5vw;
   }
   .proj figcaption p {
@@ -553,12 +559,12 @@ footer ul li i {
     z-index: 1;
   }
   #zaglavlje #burger #meni li i {
-    font-size: 10vw;
+    font-size: 9vw;
   }
   #zaglavlje #burger #meni ul {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 20px;
     width: 30vw;
     display: none;
   }
@@ -583,6 +589,9 @@ footer ul li i {
   }
   #zaglavlje #burger #meni li:hover ul {
     display: block;
+  }
+  #prvo #about p {
+    font-size: 5vw;
   }
   #drugo #skils .skup {
     width: 70vw;
@@ -643,6 +652,12 @@ footer ul li i {
   #cetvrto #contact #left input::placeholder {
     font-size: 4vw;
   }
+  #cetvrto #contact #left #dugme {
+    height: 10vw;
+  }
+  #cetvrto #contact #left #dugme i {
+    font-size: 5vw;
+  }
   footer ul li {
     margin: 4vw 6vw;
   }
@@ -654,6 +669,69 @@ footer ul li i {
 @media screen and (max-width: 29em) {
   #zaglavlje header {
     left: 10vw;
+  }
+}
+
+@media screen and (max-width: 25em) {
+  #zaglavlje header {
+    width: 80vw;
+    left: 5vw;
+  }
+  #zaglavlje header h1 {
+    font-size: 8vw;
+  }
+  #zaglavlje header h1 #hi {
+    font-size: 10vw;
+  }
+  #zaglavlje header h2 {
+    font-size: 5vw;
+  }
+  .o {
+    font-size: 10vw;
+  }
+  #prvo #about p {
+    font-size: 6vw;
+  }
+  #drugo #skils .skup .blok p {
+    font-size: 5vw;
+  }
+  #drugo #skils .skup .blok i {
+    font-size: 7vw;
+  }
+  #drugo #skils .skup .blok h3 {
+    font-size: 6vw;
+  }
+  #trece #project .proj figcaption p {
+    font-size: 5vw;
+  }
+  #cetvrto #contact #left p, #cetvrto #contact #right p {
+    font-size: 6vw;
+  }
+  #cetvrto #contact #left input::-webkit-input-placeholder {
+    font-size: 5vw;
+  }
+  #cetvrto #contact #left input:-ms-input-placeholder {
+    font-size: 5vw;
+  }
+  #cetvrto #contact #left input::-ms-input-placeholder {
+    font-size: 5vw;
+  }
+  #cetvrto #contact #left input::placeholder {
+    font-size: 5vw;
+  }
+  #cetvrto #contact #right ul i {
+    font-size: 15vw;
+    margin: 5vw;
+  }
+  footer p {
+    font-size: 5vw;
+    margin: 2vw;
+  }
+  footer ul li {
+    margin: 5vw;
+  }
+  footer ul li i {
+    font-size: 8vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
